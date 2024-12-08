@@ -1,0 +1,98 @@
+.posts {
+    position: relative;
+    column-width: 320px;
+    column-gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.posts:hover .post:not(:hover) {
+    opacity: .4;
+}
+
+.post {
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    width: 100%;
+    margin: 5px 0 5px 0;
+    padding: 15px;
+    padding-bottom: 10px;
+    transition: opacity .4s ease-in-out;
+    display: inline-block;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+.post .content {
+    position: relative;
+    height: 125px;
+    overflow: hidden;
+}
+
+.post .content::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, var(--primary-color));
+}
+
+.post.active .content {
+    height: auto;
+}
+
+.post.active .content::before {
+    display: none;
+}
+
+.post .content p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+}
+
+.read-more, .post-btn {
+    position: relative;
+    border: 1px solid var(--secondary-color);
+    padding: 5px;
+    border-radius: 100px;
+    background-color: var(--secondary-color);
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.read-more::before {
+    content: "Read More";
+}
+
+.post.active .read-more::before {
+    content: "Read Less";
+}
+
+@media screen and (max-width: 750px) {
+    .posts {
+        column-gap: 0px;
+    }
+
+    .post {
+        width: 100%;
+    }
+
+    .posts:hover .post:not(:hover) {
+        opacity: unset;
+    }
+}

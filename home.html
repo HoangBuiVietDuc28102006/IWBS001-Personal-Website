@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar-footer.css">
+    <link rel="stylesheet" href="/css/founder.css">
+    <title>Document</title>
+    <style>
+        .founder {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .founder-container {
+            width: 100%;
+            padding: 50px 10%;
+        }
+
+        .founder-img {
+            grid-area: img;
+        }
+
+        .founder-info {
+            grid-area: info;
+        }
+
+        #name {
+            font-size: 50px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 5px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <p>Harry</p>
+        <ul>
+            <li><a class="active" href="/home.html" class="btn">Home</a></li>
+            <li><a href="/favourite-places.html" class="btn">Favourite Places</a></li>
+            <li><a href="/favourite-things.html" class="btn">Favourites Things</a></li>
+        </ul>
+        <label for="check" class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+
+    <div class="founder">
+        <div class="founder-container">
+            <div class="founder-content">
+                <div class="founder-img">
+                    <img src="/img/founder-17.png">
+                </div>
+                <div class="founder-info">
+                    <h1 id="name">Bui Viet Duc Hoang</h1>
+                    <h2 style="font-size: 25px;">14517926</h2>
+                    <p>Hello! My name is Bui Viet Duc Hoang; I am an ambitious and creative person born on October 20,
+                        2006. At the age of only 18 years, I do not cease seeking opportunities that push me to higher
+                        goals. With a drive for innovation and a commitment toward growth, I make a positive difference
+                        in all the aspects that mean anything in life.</p>
+                    <p>When not working on projects or chasing my dreams, I connect with like-minded people through
+                        LinkedIn, GitHub, and other social media. Let's get together and make something amazing! Here
+                        are a few links about me if you want to know more.</p>
+                    <div class="founder-personal-info">
+                        <div><span>UTS Email:</span><span><a
+                                    href="mailto:bui.v.hoang-1@student.uts.edu.au">bui.v.hoang-1@student.uts.edu.au</a></span>
+                        </div>
+                        <div><span>Univerity:</span><span>University of Technology Sydney</span></div>
+                        <div><span>Major:</span><span>Artificial Intelligence</span></div>
+                        <div><span>Major:</span><span>Artificial Intelligence</span></div>
+                    </div>
+                    <div class="button">
+                        <a href="/files/picture by Ennel.pdf" download="HBVD_CV" class="download-btn"><button>Download
+                                CV</button></a>
+                        <button>Contact Me</button>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills-container">
+                        <div class="skill">Friendly</div>
+                        <div class="percentage-bar" style="width: 100%;">
+                            <div class="percentage-line" value="75%" style="max-width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skills-container">
+                        <div class="skill">Discipline</div>
+                        <div class="percentage-bar" style="width: 100%;">
+                            <div class="percentage-line" value="80%" style="max-width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skills-container">
+                        <div class="skill">Confidence</div>
+                        <div class="percentage-bar" style="width: 100%;">
+                            <div class="percentage-line" value="85%" style="max-width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skills-container">
+                        <div class="skill">Adaptability</div>
+                        <div class="percentage-bar" style="width: 100%;">
+                            <div class="percentage-line" value="85%" style="max-width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+</body>
+<script src="/js/templates.js"></script>
+
+</html>

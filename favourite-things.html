@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar-footer.css">
+    <link rel="stylesheet" href="/css/auto-slider.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <p>Harry</p>
+        <ul>
+            <li><a href="/home.html" class="btn">Home</a></li>
+            <li><a href="/favourite-places.html" class="btn">Favourite Places</a></li>
+            <li><a class="active" href="/favourite-things.html" class="btn">Favourites Things</a></li>
+        </ul>
+        <label for="check" class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="https://cdn.thewirecutter.com/wp-content/media/2024/08/androidphones-2048px-04371-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp"
+                    alt="" style="height: 100%;">
+            </div>
+            <div class="item">
+                <img src="https://www.nbc.com/sites/nbcblog/files/styles/scale_1280/public/2024/07/paris-2024-olympics-soccer.jpg"
+                    alt="" style="height: 100%;">
+            </div>
+            <div class="item">
+                <img src="https://media.wired.com/photos/61f48f02d0e55ccbebd52d15/master/pass/Gear-Rant-Game-Family-Plans-1334436001.jpg"
+                    alt="" style="height: 100%;">
+            </div>
+            <div class="item">
+                <img src="https://i0.wp.com/www.ear-fidelity.com/wp-content/uploads/2022/10/P1054788s-scaled.jpg?fit=2560%2C1707&ssl=1"
+                    alt="" style="height: 100%;">
+            </div>
+            <div class="item">
+                <img src="https://external-preview.redd.it/apple-macbook-pro-16-2023-review-m2-max-challenges-geforce-v0-YpwzcjdfuDptKCuSEGQ2K8E34kGfmezglTqzTDdl4ik.jpg?auto=webp&s=ddee5d876a964422b85952a9e581b3ca6120fb47"
+                    alt="" style="height: 100%;">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="card__container">
+            <div class="card__article" style="overflow: hidden;">
+                <img src="https://www.apple.com/au/iphone/home/images/overview/consider_modals/environment/modal_trade_in__k5xx81wg61ei_large.jpg"
+                    alt="image" class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">Inseparable Gadget. I use it almost all the time.</span>
+                    <h2 class="card__title">iPhone</h2>
+                    <a href="#" class="card__button">Read More</a>
+                </div>
+            </div>
+
+            <div class="card__article" style="overflow: hidden;">
+                <img src="https://images.macrumors.com/article-new/2018/02/airpods-4-blue.jpg" alt="image"
+                    class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">I use AirPods when I need to relax my mind.</span>
+                    <h2 class="card__title">AirPods</h2>
+                    <a href="#" class="card__button">Read More</a>
+                </div>
+            </div>
+
+            <div class="card__article" style="overflow: hidden;">
+                <img src="https://www.digitaltrends.com/wp-content/uploads/2024/11/macbook-pro-m4-pro-01.jpg?p=1"
+                    alt="image" class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">My MacBook is use for studying, researching, coding and also
+                        sometimes entertaining.</span>
+                    <h2 class="card__title">MacBook</h2>
+                    <a href="#" class="card__button">Read More</a>
+                </div>
+            </div>
+            <div class="card__article" style="overflow: hidden;">
+                <img src="https://www.nbc.com/sites/nbcblog/files/styles/scale_1280/public/2024/07/paris-2024-olympics-soccer.jpg"
+                    alt="image" class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">I love football. I used to play football with my group of friends
+                        every day.</span>
+                    <h2 class="card__title">Football</h2>
+                    <a href="#" class="card__button">Read More</a>
+                </div>
+            </div>
+            <div class="card__article" style="overflow: hidden;">
+                <img src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10001/0970110021_gtr_frt_001_rr.jpg"
+                    alt="image" class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">I like my guitar. I play it when bored, and stressed to relax my
+                        mind too.</span>
+                    <h2 class="card__title">Guitar</h2>
+                    <a href="#" class="card__button">Read More</a>
+                </div>
+            </div>
+            <div class="card__article" style="overflow: hidden;">
+                <img src="https://cdn.mos.cms.futurecdn.net/4wpKrH93D37dDPTisdqGy4-1200-80.jpg" alt="image"
+                    class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">I use my camera to capture memories of my family and friends.</span>
+                    <h2 class="card__title">Camera</h2>
+                    <a href="#" class="card__button">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+</body>
+<script src="/js/templates.js"></script>
+<script src="/js/auto-slider.js"></script>
+
+</html>
